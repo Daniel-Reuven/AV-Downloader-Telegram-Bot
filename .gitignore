@@ -1,0 +1,14 @@
+# Git Ignore file for Github integration
+
+# ignore .txt files
+*.txt
+
+# Telegram files
+*.telegramFile
+*.telegramToken
+
+# ignore .log files
+*.log
+
+# ignore .json files
+*.json
