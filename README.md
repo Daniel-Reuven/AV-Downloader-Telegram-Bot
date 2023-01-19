@@ -14,10 +14,11 @@
 
 ### Installation:
 
-- [ ] Use Python 3.10 or above
-- [ ] Create Telegram bot and save the Token for it
-- [ ] Remove "-example" from files under config folder
-- [ ] Install FFMPEG
+- [ ] Use Python 3.10 or above.
+- [ ] Create Telegram bot and save the Token for it.
+- [ ] Remove "-example" from files under config folder.
+- [ ] Remove placeholder content from .txt files under config folder(<PLACE HOLDER>). 
+- [ ] Install FFMPEG.
 - [ ] Install relevant packages from requirements.txt file:
 `$ pip install -r requirements.txt`
 - [ ] Configure the secret.json file:
