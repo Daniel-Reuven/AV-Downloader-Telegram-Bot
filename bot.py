@@ -117,7 +117,7 @@ def msg_handler_content(self, update, chat_id, inbound_text):
     # Handle "/video" or "/v" mode
     elif update.message.text.lower().startswith('/video') or update.message.text.lower().startswith('/v'):
         temp = inbound_text.split(" ", 1)[1]
-        logger.info(f'chat_id: "{chat_id}" - command received: /video or /v with ""{temp}"'.format())
+        logger.info(f'chat_id: "{chat_id}" - command received: /video or /v with "{temp}"'.format())
         self.send_text(update, f'Processing link')
         logger.info(f'"{temp}"'.format())
         if inbound_text != '/video' and is_string_an_url(temp):

@@ -62,7 +62,7 @@ def manage_downloads(filename, m):
         downloads[filename] = f'{dt_future}'
         # update local downloads.json file
         with open('config/downloads.json', 'w') as json_list_w:
-            json.dump(downloads, json_list_w)
+            json.dump(downloads, json_list_w, indent=4)
         json_list_w.close()
         logger.info(f"downloads.json update success.".format())
         # Return link after success on everything
