@@ -118,9 +118,9 @@ def msg_handler_content(self, update, chat_id, inbound_text):
     elif update.message.text.lower().startswith('/video') or update.message.text.lower().startswith('/v'):
         temp = inbound_text.split(" ", 1)[1]
         logger.info(f'chat_id: "{chat_id}" - command received: /video or /v with "{temp}"'.format())
-        self.send_text(update, f'Processing link')
-        logger.info(f'"{temp}"'.format())
         if inbound_text != '/video' and is_string_an_url(temp):
+            self.send_text(update, f'Processing link:')
+            logger.info(f'"{temp}"'.format())
             logger.info(f'Downloading with mode 1(video) "{temp}"'.format())
             temp_file = download_youtube_video(temp, 1, m)
             if temp_file.startswith('Error'):
